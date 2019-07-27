@@ -6,6 +6,5 @@ This is the list of the GitHub usernames of all the people interested in contrib
 
 - [datapythonista](https://github.com/datapythonista/)
 - [martinagvilas](https://github.com/martinagvilas)
-- [dorothykiz1](https://github.com/dorothykiz1/)
 
  
