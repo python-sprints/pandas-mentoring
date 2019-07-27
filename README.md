@@ -4,4 +4,4 @@ This is the list of the GitHub usernames of all the people interested in contrib
 
 - [datapythonista](https://github.com/datapythonista/)
 - [martinagvilas](https://github.com/martinagvilas)
-- WuraolaOyewusi
+- [WuraolaOyewusi](https://github.com/WuraolaOyewusi)
