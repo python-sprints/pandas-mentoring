@@ -5,3 +5,7 @@ This is the list of the GitHub usernames of all the people interested in contrib
 - [datapythonista](https://github.com/datapythonista/)
 - [martinagvilas](https://github.com/martinagvilas)
 - [galuhsahid](https://github.com/galuhsahid)
+
+---
+
+This list is not yet complete—we'll keep adding more people.
