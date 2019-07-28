@@ -9,5 +9,7 @@ This is the list of the [GitHub](https://github.com) usernames of all the people
 - [ayowolet](https://github.com/ayowolet)
 - [sparalic](https://github.com/sparalic/)
 - [dorothykiz1](https://github.com/dorothykiz1/)
+- [dujm](https://github.com/dujm)
+
 
 This list is not yet complete—we'll keep adding more people.
