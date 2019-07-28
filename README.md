@@ -7,6 +7,6 @@ This is the list of the GitHub usernames of all the people interested in contrib
 - [galuhsahid](https://github.com/galuhsahid)
 - [Bhavani Ravi](https://github.com/bhavaniravi)
 - [Enfa Rose George](https://github.com/enfageorge)
---
+
 
 This list is not yet complete—we'll keep adding more people.
