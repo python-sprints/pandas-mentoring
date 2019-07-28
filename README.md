@@ -1,5 +1,5 @@
 # pandas-mentoring
-<img src="img/logo.jpeg" width="900" height="400"><br>
+<img src="img/logo.jpeg" width="900" height="200"><br>
 This is the list of the GitHub usernames of all the people interested in contributing to pandas:
 
 - [datapythonista](https://github.com/datapythonista/)
