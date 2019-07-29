@@ -6,6 +6,7 @@ This is the list of the [GitHub](https://github.com) usernames of all the people
 - [martinagvilas](https://github.com/martinagvilas)
 - [galuhsahid](https://github.com/galuhsahid)
 - [Bhavani Ravi](https://github.com/bhavaniravi)
+<<<<<<< HEAD
 - [ayowolet](https://github.com/ayowolet)
 - [sparalic](https://github.com/sparalic/)
 - [dorothykiz1](https://github.com/dorothykiz1/)
@@ -14,5 +15,9 @@ This is the list of the [GitHub](https://github.com) usernames of all the people
 - [Sarah Masud](https://github.com/sara-02)
 - [MKhalusova](https://github.com/MKhalusova)
 
+=======
+- [montjoile](https://github.com/montjoile)
+>>>>>>> e568b0a67b2fffc994594331f2d266a24f813efd
 
-This list is not yet complete—we'll keep adding more people.
+
+This list is not yet complete - we will keep adding more people.
