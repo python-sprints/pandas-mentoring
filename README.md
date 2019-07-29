@@ -12,6 +12,7 @@ This is the list of the [GitHub](https://github.com) usernames of all the people
 - [dujm](https://github.com/dujm)
 - [Bhuvana KA](https://github.com/bhuvanakundumani)
 - [Sarah Masud](https://github.com/sara-02)
+- [MKhalusova](https://github.com/MKhalusova)
 
 
 This list is not yet complete—we'll keep adding more people.
