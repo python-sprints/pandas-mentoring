@@ -11,6 +11,7 @@ This is the list of the [GitHub](https://github.com) usernames of all the people
 - [dorothykiz1](https://github.com/dorothykiz1/)
 - [dujm](https://github.com/dujm)
 - [Bhuvana KA](https://github.com/bhuvanakundumani)
+- [Sarah Masud](https://github.com/sara-02)
 - [MKhalusova](https://github.com/MKhalusova)
 
 
