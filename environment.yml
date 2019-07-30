@@ -1,0 +1,6 @@
+name: pandas-docs
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - sphinx
