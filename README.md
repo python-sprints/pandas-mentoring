@@ -15,6 +15,6 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [MKhalusova](https://github.com/MKhalusova)
 - [smiaa](https://github.com/smiaa)
 - [lusmoura](https://github.com/lusmoura)
-
+- [Aya-S](https://github.com/Aya-S)
 
 This list is not yet complete—we'll keep adding more people.
