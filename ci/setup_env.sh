@@ -88,7 +88,7 @@ conda list
 # Clean up any left-over from a previous build
 # (note workaround for https://github.com/conda/conda/issues/2679:
 #  `conda env remove` issue)
-conda remove --all -q -y -n pandas-dev
+conda remove --all -q -y -n pandas-docs
 
 echo
 echo "conda env create -q --file=${ENV_FILE}"
@@ -103,8 +103,8 @@ if [[ "$BITS32" == "yes" ]]; then
     export CONDA_BUILD=1
 fi
 
-echo "activate pandas-dev"
-source activate pandas-dev
+echo "activate pandas-docs"
+source activate pandas-docs
 
 echo
 echo "remove any installed pandas package"
