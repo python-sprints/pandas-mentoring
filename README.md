@@ -13,6 +13,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Bhuvana KA](https://github.com/bhuvanakundumani)
 - [Sarah Masud](https://github.com/sara-02)
 - [MKhalusova](https://github.com/MKhalusova)
+- [smiaa](https://github.com/smiaa)
 - [lusmoura](https://github.com/lusmoura)
 
 
