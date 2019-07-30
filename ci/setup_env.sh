@@ -94,6 +94,9 @@ echo
 echo "conda env create -q --file=${ENV_FILE}"
 time conda env create -q --file="${ENV_FILE}"
 
+echo
+echo "conda info --envs"
+conda info --envs
 
 if [[ "$BITS32" == "yes" ]]; then
     # activate 32-bit compiler
