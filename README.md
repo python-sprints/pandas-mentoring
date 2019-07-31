@@ -6,7 +6,6 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [martinagvilas](https://github.com/martinagvilas)
 - [galuhsahid](https://github.com/galuhsahid)
 - [Bhavani Ravi](https://github.com/bhavaniravi)
-
 - [ayowolet](https://github.com/ayowolet)
 - [sparalic](https://github.com/sparalic/)
 - [dorothykiz1](https://github.com/dorothykiz1/)
