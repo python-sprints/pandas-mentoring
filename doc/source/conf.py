@@ -9,7 +9,7 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
+
 import os
 import sys
 
@@ -21,7 +21,7 @@ sys.setrecursionlimit(1500)
 
 project = 'pandas-mentoring'
 copyright = '2019, datapythonista'
-author = 'datapythonista'
+author = 'pandas mentoring team'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
