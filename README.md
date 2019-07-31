@@ -9,6 +9,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [ayowolet](https://github.com/ayowolet)
 - [sparalic](https://github.com/sparalic/)
 - [dorothykiz1](https://github.com/dorothykiz1/)
+- [WuraolaOyewusi](https://github.com/WuraolaOyewusi)
 - [dujm](https://github.com/dujm)
 - [Bhuvana KA](https://github.com/bhuvanakundumani)
 - [Sarah Masud](https://github.com/sara-02)
