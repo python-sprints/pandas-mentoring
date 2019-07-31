@@ -24,4 +24,4 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 
 This list is not yet complete—we'll keep adding more people.
 
-And, if you wish to contribute to pandas, please check out the [pandas-mentoring wiki](https://github.com/python-sprints/pandas-mentoring/wiki) for more information.
+And, if you wish to contribute to [pandas](https://github.com/pandas-dev/pandas), please check out the [pandas-mentoring wiki](https://github.com/python-sprints/pandas-mentoring/wiki) for more information.
