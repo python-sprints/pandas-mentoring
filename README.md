@@ -19,3 +19,6 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Asvitha Janani](https://github.com/asvithajanani)
 
 This list is not yet complete—we'll keep adding more people.
+
+Things Learned:
+- Creating pull requests
