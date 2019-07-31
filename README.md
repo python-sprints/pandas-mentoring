@@ -16,6 +16,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [smiaa](https://github.com/smiaa)
 - [lusmoura](https://github.com/lusmoura)
 - [Asvitha Janani](https://github.com/asvithajanani)
+- [Bhagya C](https://github.com/BhagyaC)
 
 
 This list is not yet complete—we'll keep adding more people.
