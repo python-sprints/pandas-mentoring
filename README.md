@@ -9,6 +9,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [ayowolet](https://github.com/ayowolet)
 - [sparalic](https://github.com/sparalic/)
 - [dorothykiz1](https://github.com/dorothykiz1/)
+- [WuraolaOyewusi](https://github.com/WuraolaOyewusi)
 - [dujm](https://github.com/dujm)
 - [Bhuvana KA](https://github.com/bhuvanakundumani)
 - [Sarah Masud](https://github.com/sara-02)
@@ -16,7 +17,11 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [smiaa](https://github.com/smiaa)
 - [lusmoura](https://github.com/lusmoura)
 - [Asvitha Janani](https://github.com/asvithajanani)
-- [Elaine Wong] (https://github.com/elainewong)
+- [Aya Salama](https://github.com/Aya-S)
+- [Elaine Wong](https://github.com/elainewong)
+
 
 
 This list is not yet complete—we'll keep adding more people.
+
+And, if you wish to contribute to pandas, please check out the [pandas-mentoring wiki](https://github.com/python-sprints/pandas-mentoring/wiki) for more information.
