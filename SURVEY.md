@@ -10,8 +10,8 @@ Please add the questions that you feel can be included in the survey.
 Add all the questions that pops in your mind we will rank them later on.**
 
 ### 1.What do you use Pandas for?(multiple choice /single choice)
-Data analysis
-Machine learning
+- Data analysis
+- Machine learning
 Programming of web parsers / scrapers / crawlers
 Software testing / Writing automated tests
 Network programming
