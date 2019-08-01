@@ -95,6 +95,26 @@ Add all the questions that pops in your mind we will rank them later on.**
 - More than 5,000
 - Not sure
 
+### Experience in IT
+- Less than 1 year
+- 1–2 years
+- 3–5 years
+- 6–10 years
+- 11+ years
+
+
+### Age range
+- 17 or younger
+- 18–20
+- 21–29
+- 30–39
+- 40–49
+- 50–59
+- 60 or older
+
+### Global Community(Country you represent)
+
+
 ### Which of the following industries best describes your company's business?
 
 - Information Technology / Software Development
@@ -122,6 +142,8 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Education / Training
 - Science
 - Other
+
+
 
 ### Would you like to be a scholar for pandas-contributors 2019? if yes why??
 ### What are your thoughts on pandas-contributors scholarship
