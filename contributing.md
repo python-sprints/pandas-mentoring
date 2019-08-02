@@ -1,27 +1,27 @@
 <br>
 
 ### Terms
-  * Upstream: the repository from the ```original_author```
-  * Origin: the forked repository under your ```account```
+  * Upstream: the repository from the `original_author`
+  * Origin: the forked repository under your `account`
 <br>
 
-### 1. Fork a ```project``` to your GitHub ```account```
-### 2. Clone the ```project``` to your local environment
-```
+### 1. Fork a `project` to your GitHub `account`
+### 2. Clone the `project` to your local environment
+`
     git clone git@github.com:account/project.git
     cd project
-```
-### 3. Set up the origin and upstream of the your local ```project```
-```  
+`
+### 3. Set up the origin and upstream of the your local `project`
+`  
    #  Add the "upstream" to your cloned repository
     git remote add upstream git@github.com:original_author/project.git
 
    # Add the "origin" to your cloned repository
     git remote add origin git@github.com:account/project.git
-```
+`
 
 ### 4. Synchronize with updates from the upstream
-```
+`
    # 1) Go to the "master" branch of your fork ("origin")
     git checkout master
 
@@ -42,9 +42,9 @@
 
    # 7) Get back your stashed changes (if any)
     git stash pop
-```
+`
 ### 5. Do your work in a ```new-branch``` of your origin
-```
+`
    # 1) Add a new branch from your origin/master branch
    git branch new-branch origin/master
    git checkout new-branch
@@ -58,17 +58,18 @@
 
    # 4) Push to your new-branch
    git push origin new-branch
-```
+`
 
 ### 6. Send a pull request on GitHub
- * Go to the ```new-branch``` of your forked ```project```
- * Click ```Compare & pull request```
+ * Go to the `new-branch` of your forked `project`
+ * Click `Compare & pull request`
  * Leave a comment
-   * If you are solving an issue (e.g. ```#17```), add ```Closes #17``` in the comment, the issue will automatically be closed when the pull request is merged.
+   * If you are solving an issue (e.g. `#17`), add `Closes #17` in the comment, the issue will automatically be closed when the pull request is merged.
 
 ### 7. Delete branch locally and/or remotely after pull request is merged on GitHub
- * From the command line: ```git branch -d new-branch```
- * Additionally if you want to delete your remote branch: ```git push origin : new-branch```
+ * From the command line: `git branch -d new-branch`
+ * Additionally if you want to delete your remote branch: `git push origin : new-branch`
+
 ### Reference
 * [GitHub forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)  
 * [Git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
