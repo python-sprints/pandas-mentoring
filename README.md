@@ -1,7 +1,7 @@
 # pandas-mentoring
 <img src="img/logo.jpeg" width="600" height="200"><br>
 
-# Mentoring new pandas contributors (team 2019)
+# New pandas contributors (team 2019)
 List of the [GitHub](https://github.com) usernames of all the people interested in contributing to [pandas](https://github.com/pandas-dev/pandas):
 - [martinagvilas](https://github.com/martinagvilas)
 - [galuhsahid](https://github.com/galuhsahid)
@@ -18,6 +18,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [lusmoura](https://github.com/lusmoura)
 - [Asvitha Janani](https://github.com/asvithajanani)
 - [Aya Salama] (https://github.com/Aya-S)
+- [Bhagya C](https://github.com/BhagyaC)
 - [Enfa Rose George](https://github.com/enfageorge)
 
 This list is not yet complete—we'll keep adding more people.
