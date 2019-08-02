@@ -19,7 +19,6 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Asvitha Janani](https://github.com/asvithajanani)
 - [Aya Salama](https://github.com/Aya-S)
 - [Bhagya C](https://github.com/BhagyaC)
-
 - [Enfa Rose George](https://github.com/enfageorge)
 
 This list is not yet complete—we'll keep adding more people.
