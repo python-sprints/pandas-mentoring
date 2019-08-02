@@ -20,5 +20,6 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Aya Salama] (https://github.com/Aya-S)
 - [Bhagya C](https://github.com/BhagyaC)
 
-
 This list is not yet complete—we'll keep adding more people.
+
+[Lessons Learned/ Knowledge transfer documentation]( https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md)
