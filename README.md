@@ -1,4 +1,4 @@
-# pandas-mentoring
+#pandas-mentoring
 <img src="img/logo.jpeg" width="600" height="200"><br>
 
 # New pandas contributors (team 2019)
@@ -19,10 +19,8 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Asvitha Janani](https://github.com/asvithajanani)
 - [Aya Salama](https://github.com/Aya-S)
 - [Bhagya C](https://github.com/BhagyaC)
-<<<<<<< HEAD
-=======
+
 - [Enfa Rose George](https://github.com/enfageorge)
->>>>>>> 4c202d6de76eecaa50abb087045ac1922307e818
 
 This list is not yet complete—we'll keep adding more people.
 
