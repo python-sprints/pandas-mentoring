@@ -43,7 +43,7 @@
    # 7) Get back your stashed changes (if any)
     git stash pop
 ```
-### 5. Do your work in a ```new-branch``` of your origin
+### 5. Do your work in a `new-branch` of your origin
 ```
    # 1) Add a new branch from your origin/master branch
    git branch new-branch origin/master
