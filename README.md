@@ -23,4 +23,4 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 
 This list is not yet complete—we'll keep adding more people.
 
-Gitter link: https://gitter.im/py-sprints/pandas-mentoring
+Gitter link: <https://gitter.im/py-sprints/pandas-mentoring>
