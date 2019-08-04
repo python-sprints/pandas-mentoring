@@ -7,60 +7,17 @@ jobs:
   steps:
   - script: |
       echo '##vso[task.setvariable variable=ENV_FILE]environment.yml'
+      echo '##vso[task.prependpath]$(HOME)/miniconda3/bin'
     displayName: 'Setting environment variables'
 
   - script: |
-      export PATH=$HOME/miniconda3/bin:$PATH
       sudo apt-get install -y libc6-dev-i386
       ci/setup_env.sh
     displayName: 'Setup environment and build pandas'
 
   - script: |
-      export PATH=$HOME/miniconda3/bin:$PATH
       source activate pandas-docs
       # Next we should simply have `doc/make.py --warnings-are-errors`, everything else is required because the ipython directive doesn't fail the build on errors (https://github.com/ipython/ipython/issues/11547)
-      doc/make.py --warnings-are-errors | tee sphinx.log ; SPHINX_RET=${PIPESTATUS[0]}
-      grep -B1 "^<<<-------------------------------------------------------------------------$" sphinx.log ; IPY_RET=$(( $? != 1 ))
-      exit $(( $SPHINX_RET + $IPY_RET ))
+      cd doc/
+      make html
     displayName: 'Build documentation'
-
-  - script: |
-      cd doc/build/html
-      git init
-      touch .nojekyll
-      echo "dev.pandas.io" > CNAME
-      printf "User-agent: *\nDisallow: /" > robots.txt
-      git add --all .
-      git config user.email "pandas-dev@python.org"
-      git config user.name "pandas-docs-bot"
-      git commit -m "pandas documentation in master"
-    displayName: 'Create git repo for docs build'
-    condition : |
-      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
-
-  # For `InstallSSHKey@0` to work, next steps are required:
-  # 1. Generate a pair of private/public keys (i.e. `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`)
-  # 2. Go to "Library > Secure files" in the Azure Pipelines dashboard: https://dev.azure.com/pandas-dev/pandas/_library?itemType=SecureFiles
-  # 3. Click on "+ Secure file"
-  # 4. Upload the private key (the name of the file must match with the specified in "sshKeySecureFile" input below, "pandas_docs_key")
-  # 5. Click on file name after it is created, tick the box "Authorize for use in all pipelines" and save
-  # 6. The public key specified in "sshPublicKey" is the pair of the uploaded private key, and needs to be set as a deploy key of the repo where the docs will be pushed (with write access): https://github.com/pandas-dev/pandas-dev.github.io/settings/keys
-  - task: InstallSSHKey@0
-    inputs:
-      hostName: 'github.com,192.30.252.128 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=='
-      sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDeLx0pB6up/UQa5GP9HAItHAxg346xX09hDu161jdKcR689tLenB2TK+2uIENz5hLMtDUN3X619og+38Xs3k8xCTEfainxddnuDnaGerlgCcdzUPepn47lfU8JrQhDW8GCP99Owftu22U/MTtMC793UFYp52unTUJlzVl8AjtC7u1OvwZBQ8cNvEGJyFjx1zLioXlQwsINqYxYqVIOyV17fVzuK1XEmyFNLhuV2c/S2OAFYWyAt0md3MPzKn42oO6Emt1WAT7n1o+R5BAaBSLLkHt8zO3cI5wYmNwb7Nz4ITaBcOiPH06sGxleDNiiXqzOf0RkD/X+zSaJkjsTwBmdw4hjn6aYLh1ikdx3pOWFKOlu3EkNocz+h0QdWpIRjduqbs9gJYbxuYL+F4gi4mBAktwuWN4l1bz0vI1Wz/nkQmPMI1ZZmkgT49NPAk7XNQfS0d2TS637lsJaWpZ/wZN7XRV8WfGDOoxoMpviw2IFgw+GMXBBDP98Njo3VC7lWasi/yh6G/yT/FymnDFfGDilDo42H+ru9uOJfV9w/hO6jGExetzHuSGXbv1IxXgt/fpMKftHOEwUzKaihUsdRm7N6YutbaYi0QdYqgO1ri4GAOpXLGp84fBfN6WoK2J4mCDgN8/f3vu85bumfR0YH51AcBQHxuNTa3nOsDsTZZhSeQ== bhava0895@gmail.com'
-      sshKeySecureFile: 'pandas_mentoring'
-    displayName: 'Install GitHub ssh deployment key'
-    condition : |
-      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
-
-  - script: |
-      cd doc/build/html
-      git remote add origin git@github.com:bhavaniravi/pandas-mentoring.git
-      git push -f origin master
-    displayName: 'Publish docs to GitHub pages'
-    condition : |
-      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
