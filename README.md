@@ -5,7 +5,7 @@
 
 List of the [GitHub](https://github.com) usernames of all the people interested in contributing to [pandas](https://github.com/pandas-dev/pandas):
 
-## Partipants
+## Participants
 
 - [martinagvilas](https://github.com/martinagvilas)
 - [galuhsahid](https://github.com/galuhsahid)
