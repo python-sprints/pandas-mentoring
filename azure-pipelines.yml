@@ -1,9 +1,9 @@
 # Adapted from https://github.com/numba/numba/blob/master/azure-pipelines.yml
 jobs:
 - job: 'Docs'
-  condition:
+  condition: |
     and(not(eq(variables['Build.Reason'], 'PullRequest')),
-    ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+    eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   pool:
     vmImage: ubuntu-16.04
   timeoutInMinutes: 90
