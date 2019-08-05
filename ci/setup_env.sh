@@ -1,20 +1,6 @@
 #!/bin/bash -e
 
-
-# edit the locale file if needed
-#if [ -n "$LOCALE_OVERRIDE" ]; then
-#    echo "Adding locale to the first line of pandas/__init__.py"
-#    rm -f pandas/__init__.pyc
-#    SEDC="3iimport locale\nlocale.setlocale(locale.LC_ALL, '$LOCALE_OVERRIDE')\n"
-#    sed -i "$SEDC" pandas/__init__.py
-#    echo "[head -4 pandas/__init__.py]"
-#    head -4 pandas/__init__.py
-#    echo
-#    sudo locale-gen "$LOCALE_OVERRIDE"
-#fi
-
 MINICONDA_DIR="$HOME/miniconda3"
-
 
 if [ -d "$MINICONDA_DIR" ]; then
     echo
@@ -56,29 +42,6 @@ conda update -n base conda
 echo "conda info -a"
 conda info -a
 
-#echo
-#echo "set the compiler cache to work"
-#if [ -z "$NOCACHE" ] && [ "${TRAVIS_OS_NAME}" == "linux" ]; then
-#    echo "Using ccache"
-#    export PATH=/usr/lib/ccache:/usr/lib64/ccache:$PATH
-#    GCC=$(which gcc)
-#    echo "gcc: $GCC"
-#    CCACHE=$(which ccache)
-#    echo "ccache: $CCACHE"
-#    export CC='ccache gcc'
-#elif [ -z "$NOCACHE" ] && [ "${TRAVIS_OS_NAME}" == "osx" ]; then
-#    echo "Install ccache"
-#    brew install ccache > /dev/null 2>&1
-#    echo "Using ccache"
-#    export PATH=/usr/local/opt/ccache/libexec:$PATH
-#    gcc=$(which gcc)
-#    echo "gcc: $gcc"
-#    CCACHE=$(which ccache)
-#    echo "ccache: $CCACHE"
-#else
-#    echo "Not using ccache"
-#fi
-
 echo "source deactivate"
 source deactivate
 
@@ -116,23 +79,6 @@ echo
 echo "conda list pandas"
 conda list pandas
 
-# Make sure any error below is reported as such
-
-# echo "Build extensions and install pandas"
-# python setup.py build_ext -q --inplace
-# python -m pip install -e .
-
 echo
 echo "conda list"
 conda list
-
-# Install DB for Linux
-#if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
-#  echo "installing dbs"
-#  mysql -e 'create database pandas_nosetest;'
-#  psql -c 'create database pandas_nosetest;' -U postgres
-#else
-#   echo "not using dbs on non-linux Travis builds or Azure Pipelines"
-#fi
-#
-#echo "done"
