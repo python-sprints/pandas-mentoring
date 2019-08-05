@@ -27,3 +27,5 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Shilpa](https://github.com/shilpavijay)
 
 This list is not yet complete—we'll keep adding more people.
+
+Gitter link: <https://gitter.im/py-sprints/pandas-mentoring>
