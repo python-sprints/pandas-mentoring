@@ -1,6 +1,9 @@
 # Adapted from https://github.com/numba/numba/blob/master/azure-pipelines.yml
 jobs:
 - job: 'Docs'
+  condition:
+    and(not(eq(variables['Build.Reason'], 'PullRequest')),
+    ne(variables['Build.SourceBranch'], 'refs/heads/master'))
   pool:
     vmImage: ubuntu-16.04
   timeoutInMinutes: 90
@@ -12,10 +15,8 @@ jobs:
 
   - script: |
       sudo apt-get install -y libc6-dev-i386
-      echo "$PATH"
       ci/setup_env.sh
-      echo "$PATH"
-    displayName: 'Setup environment and build pandas'
+    displayName: 'Install Miniconda'
 
   - script: |
       source activate pandas-docs
@@ -33,9 +34,9 @@ jobs:
       git config user.name "bhavaniravi"
       git commit -m "pandas documentation in master"
     displayName: 'Create git repo for docs build'
-#    condition : |
-#      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-#          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition : |
+      and(not(eq(variables['Build.Reason'], 'PullRequest')),
+          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
     # For `InstallSSHKey@0` to work, next steps are required:
     # 1. Generate a pair of private/public keys (i.e. `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`)
@@ -50,15 +51,15 @@ jobs:
       sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCtG+MWrDGt7dHml+IJT9VCmibD7VTCGkax1EBUiCNaao4XhMZycZJLoRWkTtFIvFW323YPc0H892fAp+8HFCNOp4FpKVoThhs+NghUCvpEK/eifsWUrcQakyoyH+19tcuCUWYaXuF8O70y6FL+fWhzRfITRUdQC697l+zw3s39Up80xTC2QQXaWsv54PfZYQbiVvL9mrufIoJ569W27hKmv742euVfoQzcgfX+FAhChWroBM7WtqLpVVFgcMfB37uOCUKxBkECJvRzOuH4c8yXK0UQAdrIsiy89QUEvG2GobHl9MnYjbkSlFCt03Q4rPwrGIvM1R7XnTma9QkRYcHFKYaYhGQhAnux+fNEEGmw/ssWMnqE0wb4cmt4/l/K4VYwPiMok/WWwgGbwedjTahXMyFkXt8lnR7lQwDHjy/ZOw9ZYcZF/7FnjlKyC0QfXc8TLk1E0v84S6lvoMnYwFTS2dwEd/N2O4fGHC+TXI9B2upa3FB6P2ef+6rYZBdKcJvq8WZd9dqxn71pEtXHA3iI2+gx4VZq1Q+BQ6CHSYgoNsJFo7atO455MKMM3B2d2/D2/GfD3sygB1B09OCAjf8MrnRIGjkkaUXqzbvLp0BkKemH0VUu4SQr8028gsSvuLizNphdgLN0EI/rfM+Ln1zglHi5PBc4f2WURyntFNSeuQ== bhava0895@gmail.com'
       sshKeySecureFile: 'pandas-mentoring-docs'
     displayName: 'Install GitHub ssh deployment key'
-#    condition : |
-#      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-#          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition : |
+      and(not(eq(variables['Build.Reason'], 'PullRequest')),
+          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - script: |
       cd doc/build/html
       git remote add origin git@github.com:bhavaniravi/pandas-mentoring-docs.git
       git push -f origin master
     displayName: 'Publish docs to GitHub pages'
-#    condition : |
-#      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-#          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition : |
+      and(not(eq(variables['Build.Reason'], 'PullRequest')),
+          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
