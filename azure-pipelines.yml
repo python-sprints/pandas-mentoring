@@ -33,9 +33,9 @@ jobs:
       git config user.name "bhavaniravi"
       git commit -m "pandas documentation in master"
     displayName: 'Create git repo for docs build'
-    condition : |
-      and(not(eq(variables['Build.Reason'], 'PullRequest')),
-          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+#    condition : |
+#      and(not(eq(variables['Build.Reason'], 'PullRequest')),
+#          eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
     # For `InstallSSHKey@0` to work, next steps are required:
     # 1. Generate a pair of private/public keys (i.e. `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`)
