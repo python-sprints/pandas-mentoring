@@ -29,56 +29,56 @@ chmod +x miniconda.sh
 
 export PATH=$MINICONDA_DIR/bin:$PATH
 
-echo
-echo "which conda"
-which conda
-
-echo
-echo "update conda"
-conda config --set ssl_verify false
-conda config --set quiet true --set always_yes true --set changeps1 false
-conda update -n base conda
-
-echo "conda info -a"
-conda info -a
-
-echo "source deactivate"
-source deactivate
-
-echo "conda list (root environment)"
-conda list
-
-# Clean up any left-over from a previous build
-# (note workaround for https://github.com/conda/conda/issues/2679:
-#  `conda env remove` issue)
-conda remove --all -q -y -n pandas-docs
-
-echo
+#echo
+#echo "which conda"
+#which conda
+#
+#echo
+#echo "update conda"
+#conda config --set ssl_verify false
+#conda config --set quiet true --set always_yes true --set changeps1 false
+#conda update -n base conda
+#
+#echo "conda info -a"
+#conda info -a
+#
+#echo "source deactivate"
+#source deactivate
+#
+#echo "conda list (root environment)"
+#conda list
+#
+## Clean up any left-over from a previous build
+## (note workaround for https://github.com/conda/conda/issues/2679:
+##  `conda env remove` issue)
+#conda remove --all -q -y -n pandas-docs
+#
+#echo
 echo "conda env create -q --file=${ENV_FILE}"
 time conda env create -q --file="${ENV_FILE}"
-
-echo
-echo "conda info --envs"
-conda info --envs
-
-if [[ "$BITS32" == "yes" ]]; then
-    # activate 32-bit compiler
-    export CONDA_BUILD=1
-fi
-
+#
+#echo
+#echo "conda info --envs"
+#conda info --envs
+#
+#if [[ "$BITS32" == "yes" ]]; then
+#    # activate 32-bit compiler
+#    export CONDA_BUILD=1
+#fi
+#
 echo "activate pandas-docs"
 source activate pandas-docs
-
-echo
-echo "remove any installed pandas package"
-echo "w/o removing anything else"
-conda remove pandas -y --force || true
-pip uninstall -y pandas || true
-
-echo
-echo "conda list pandas"
-conda list pandas
-
-echo
-echo "conda list"
-conda list
+#
+#echo
+#echo "remove any installed pandas package"
+#echo "w/o removing anything else"
+#conda remove pandas -y --force || true
+#pip uninstall -y pandas || true
+#
+#echo
+#echo "conda list pandas"
+#conda list pandas
+#
+#echo
+#echo "conda list"
+#conda list
