@@ -1,8 +1,13 @@
-#pandas-mentoring
+# pandas-mentoring
+
+# Mentoring new pandas contributors (team 2019)
+
 <img src="img/logo.jpeg" width="600" height="200"><br>
 
-# New pandas contributors (team 2019)
 List of the [GitHub](https://github.com) usernames of all the people interested in contributing to [pandas](https://github.com/pandas-dev/pandas):
+
+## Participants
+
 - [martinagvilas](https://github.com/martinagvilas)
 - [galuhsahid](https://github.com/galuhsahid)
 - [Bhavani Ravi](https://github.com/bhavaniravi)
@@ -20,10 +25,16 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Aya Salama](https://github.com/Aya-S)
 - [Bhagya C](https://github.com/BhagyaC)
 - [Enfa Rose George](https://github.com/enfageorge)
+- [Shilpa](https://github.com/shilpavijay)
+- [montjoile](https://github.com/montjoile)
 
 This list is not yet complete—we'll keep adding more people.
+
 
 ## Lessons Learned:
 Please use the link below to review or capture key lessons learned as new contributors:
 
 [Lessons Learned/ Knowledge transfer documentation](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md)
+
+Gitter link: <https://gitter.im/py-sprints/pandas-mentoring>
+
