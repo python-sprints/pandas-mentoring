@@ -1,4 +1,4 @@
-# pandas-mentoring
+#pandas-mentoring
 <img src="img/logo.jpeg" width="600" height="200"><br>
 
 # New pandas contributors (team 2019)
@@ -17,8 +17,13 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [smiaa](https://github.com/smiaa)
 - [lusmoura](https://github.com/lusmoura)
 - [Asvitha Janani](https://github.com/asvithajanani)
-- [Aya Salama] (https://github.com/Aya-S)
+- [Aya Salama](https://github.com/Aya-S)
 - [Bhagya C](https://github.com/BhagyaC)
-
+- [Enfa Rose George](https://github.com/enfageorge)
 
 This list is not yet complete—we'll keep adding more people.
+
+## Lessons Learned:
+Please use the link below to review or capture key lessons learned as new contributors:
+
+[Lessons Learned/ Knowledge transfer documentation](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md)
