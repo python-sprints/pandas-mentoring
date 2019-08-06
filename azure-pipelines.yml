@@ -1,4 +1,9 @@
 # Adapted from https://github.com/numba/numba/blob/master/azure-pipelines.yml
+pr:
+  branches:
+    exclude:
+    - master
+
 jobs:
 - job: 'Docs'
   condition: |
@@ -57,7 +62,7 @@ jobs:
 
   - script: |
       cd doc/build/html
-      git remote add origin git@github.com:bhavaniravi/pandas-mentoring-docs.git
+      git remote add origin git@github.com:python-sprints/pandas-mentoring-docs.git
       git push -f origin master
     displayName: 'Publish docs to GitHub pages'
     condition : |
