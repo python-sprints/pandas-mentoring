@@ -40,7 +40,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Handling Missing Values
 
 ### Do you use pandas at work?
-### How would you rate pandas?
+### How would you rate pandas? (Very Satisfied = 5 Satisfied = 4 Neutral = 3 Dissatisfied = 2 Very Dissatisfied = 1)
 
 - Accuracy
 - Documentation
@@ -60,20 +60,22 @@ Add all the questions that pops in your mind we will rank them later on.**
 ### Job Roles
 
 - Developer / Programmer Architect
-- Team lead
-- Data analyst
-- Technical support
-- Systems analystCIO / CEO / CTO
-- QA engineer
-- Product manager
-- Business analyst
+- Team Lead
+- Data Analyst
+- Data Scientist
+- Technical Support
+- Systems Analyst
+- CIO / CEO / CTO
+- QA Engineer
+- Product Manager
+- Business Analyst
 - DBA
 - Other
 
 ### Working in a Team vs Working Independently
 
 - Work in a team
-- Work on your ownproject(s)independently
+- Work on your own project(s)independently
 - Work as an external consultant or trainer
 
 ### Team Size
@@ -118,11 +120,12 @@ Add all the questions that pops in your mind we will rank them later on.**
 ### Which of the following industries best describes your company's business?
 
 - Information Technology / Software Development
-- ScienceEducation / Training
+- Science / Education / Training
 - Accounting / Finance / Insurance
 - Medicine / Health
-- ManufacturingBanking / Real Estate / Mortgage Financing
-- SecurityMarketing
+- Manufacturing / Banking / Real Estate / Mortgage Financing
+- Security
+- Marketing
 - Logistics/ Transportation
 - Service/ Maintenance
 - Non-profit
@@ -136,7 +139,8 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Sales / Distribution / Business Development
 - Business / Strategic Management
 - Logistics/ Transportation
-- Medicine / HealthManufacturing
+- Medicine / Health
+- Manufacturing
 - Security
 - Marketing
 - Education / Training
