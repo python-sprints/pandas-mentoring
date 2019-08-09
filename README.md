@@ -24,6 +24,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Enfa Rose George](https://github.com/enfageorge)
 - [Shilpa](https://github.com/shilpavijay)
 - [montjoile](https://github.com/montjoile)
+- [Yoma](https://github.com/yomdroid)
 
 This list is not yet complete—we'll keep adding more people.
 
