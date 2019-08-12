@@ -14,14 +14,8 @@ Add all the questions that pops in your mind we will rank them later on.**
 
 ## 1. Demographics
 
-### 1.1. What is your age range?
-- 17 or younger
-- 18–20
-- 21–29
-- 30–39
-- 40–49
-- 50–59
-- 60 or older
+### 1.1. What is your age?
+- (open question)
 
 ### 1.2. What is your country of origin?
 - (open question)
@@ -41,16 +35,26 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Other
 
 ### 2.2. What is your job role?
-- (open question)
+- Developer / Programmer Architect
+- Team Lead
+- Data Analyst
+- Data Scientist
+- Technical Support
+- Systems Analyst
+- CIO / CEO / CTO
+- QA Engineer
+- Product Manager
+- Business Analyst
+- DBA
+- Other
 
 ### 2.3. For how long have you kept this job role?
-- Less than 1 year
-- 1–2 years
-- 3–5 years
-- 6–10 years
-- 11+ years
+- (open question)
 
-### 2.4. Which of the following industries best describes your company's business?
+### 2.4. How many years of experience do you have in an IT position?
+- (open question)
+
+### 2.5. Which of the following industries best describes your company's business?
 - Information Technology / Software Development
 - Science / Education / Training
 - Accounting / Finance / Insurance
@@ -63,7 +67,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Non-profit
 - Other
 
-### 2.5. Which of the following industries do you develop for? Target industry?
+### 2.6. Which of the following industries do you develop for? Target industry?
 
 - Information Technology / Software Development
 - Accounting / Finance / Insurance
@@ -79,7 +83,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Science
 - Other
 
-### 2.6. How big is your company?
+### 2.7. How big is your company?
 - Just me
 - 2–10
 - 11–50
@@ -89,12 +93,12 @@ Add all the questions that pops in your mind we will rank them later on.**
 - More than 5,000
 - Not sure
 
-### 2.7. How do you work in terms of independence?
+### 2.8. How do you work in terms of independence?
 - Work in a team
 - Work on your own project(s)independently
 - Work as an external consultant or trainer
 
-### 2.8. If you work in a team, how big is it?
+### 2.9. If you work in a team, how big is it?
 - 2–7 people
 - 8–12 people
 - 13–20 people
@@ -114,7 +118,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 - yes
 - no
 
-### 3.3. What do you use Pandas for? (multiple choice/single choice)
+### 3.3. What do you use pandas for? (multiple choice/single choice)
 - Data analysis
 - Machine learning
 - Programming of web parsers / scrapers / crawlers
@@ -123,7 +127,12 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Software prototyping
 - DevOps / System administration / Writing automation scripts
 
-### 3.4. Which of pandas capabilities are most important to you?
+### 3.4. For how long have you been using pandas?
+- (open question)
+
+### 3.5. For how long have you been using python?
+
+### 3.6. Which of pandas capabilities are most important to you?
 - Loading Data
 - Rename Function
 - Map
@@ -139,7 +148,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Masking
 - Handling Missing Values
 
-### 3.5. How would you rate pandas in the following aspects? (Very Satisfied = 5; Satisfied = 4; Neutral = 3; Dissatisfied = 2; Very Dissatisfied = 1)
+### 3.7. How would you rate pandas in the following aspects? (Very Satisfied = 5; Satisfied = 4; Neutral = 3; Dissatisfied = 2; Very Dissatisfied = 1)
 - Accuracy
 - Documentation
 - Reliability and stability
@@ -166,6 +175,12 @@ Add all the questions that pops in your mind we will rank them later on.**
 - no
 
 ### 5.2. If you answered yes in question (5.1.), please give reasons for why you should receive a scholarship.
+- (open question)
+
+### 5.3. How many hours per week could you spend working in this internship?
+- (open question)
+
+### 5.4. What amount of money do you expect to receive from this scholarship?
 - (open question)
 
 ### 5.3. Do you have any other thoughts regarding the pandas-mentoring scholarship?
