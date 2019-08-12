@@ -183,5 +183,5 @@ Add all the questions that pops in your mind we will rank them later on.**
 ### 5.4. What amount of money do you expect to receive from this scholarship?
 - (open question)
 
-### 5.3. Do you have any other thoughts regarding the pandas-mentoring scholarship?
+### 5.5. Do you have any other thoughts regarding the pandas-mentoring scholarship?
 - (open question)
