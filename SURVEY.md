@@ -132,7 +132,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 
 ### 3.5. For how long have you been using python?
 
-### 3.6. Which of pandas capabilities are most important to you?
+### 3.6. Which of the following pandas capabilities are most important to you?
 - Loading Data
 - Rename Function
 - Map
@@ -164,7 +164,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 ### 4.2. Why did you choose to get involved in the pandas-mentoring program?
 - (open question)
 
-### 4.3. Is this the first open-source project you contribute to?
+### 4.3. Is this the first open-source project you are contributing to?
 - yes
 - no
 
@@ -180,7 +180,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 ### 5.3. How many hours per week could you spend working in this internship?
 - (open question)
 
-### 5.4. What amount of money do you expect to receive from this scholarship?
+### 5.4. What amount (USD $) of money do you expect to receive from this scholarship?
 - (open question)
 
 ### 5.5. Do you have any other thoughts regarding the pandas-mentoring scholarship?
