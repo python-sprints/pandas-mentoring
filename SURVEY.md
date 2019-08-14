@@ -2,9 +2,9 @@
 
  Hello folks ,
 
-Happy to be one of the energetic fellow among you all. We are a sufficient pack of people who really want to make their mark. And this is our opportunity for the same. Regardless of where we are now and what we know, we are all in the same mission and we will be there to support each other ***sharing is always caring :)***.
-As I mentioned earlier we are a diverse group and that is what the pandas contributors were lacking of . And here we are .There are many constrains for each of us to participate in the program fully. It would be great if we have a scholarship which will support us to be a full time pandas contributor (in my opinion, if you have anything different in mind please share :))
-So lets participate in a survey which will help understand us better. The main aim of the survey is to get a better understanding of ourselves like who we are, where are we from, what  we are doing , do we need a scholarship  ,if yes, why etc
+Happy to be one of the energetic fellows in this program. We are a diverse team who truly want to leave a mark. Regardless of where we are and what we know, we have the same mission and will be there to support each other ***sharing is always caring :)***.
+The purpose of this program is to improve diversity in pandas contributors. There are many constraints for full participation in the program and it would be great if there is a scholarship that can support full time contribution to pandas ( in my opinion, if you have anything different in mind please share :))
+So let's participate in a survey which will help understand us better. The main aim of the survey is to get a better understanding of ourselves like: who we are?, where are we from?, what we are doing?, do we need a scholarship?, if yes, why etc
 
 
 Please add the questions that you feel can be included in the survey.
@@ -153,6 +153,9 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Documentation
 - Reliability and stability
 - Usability
+
+### 3.8. What python librar(y/ies) documentation do you always find helpful?
+- (open question)
 
 ## 4. Participation in the pandas mentoring program
 
