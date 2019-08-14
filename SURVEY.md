@@ -2,9 +2,9 @@
 
  Hello folks ,
 
-Happy to be one of the energetic fellows in this program. We are a diverse team who truly want to make a mark.Regardless of where we are and what we know, we have the same mission and will be there to support each other ***sharing is always caring :)***.
-The purpose of this program is to improve diversity in pandas contributors.There are many constraints for full participation in the program and It would be great if there is a scholarship that can support full time contribution to pandas (in my opinion, if you have anything different in mind please share :))
-So let's participate in a survey which will help understand us better. The main aim of the survey is to get a better understanding of ourselves like who we are?,where are we from?,what we are doing?,do we need a scholarship?,if yes,why etc
+Happy to be one of the energetic fellows in this program. We are a diverse team who truly want to leave a mark. Regardless of where we are and what we know, we have the same mission and will be there to support each other ***sharing is always caring :)***.
+The purpose of this program is to improve diversity in pandas contributors. There are many constraints for full participation in the program and it would be great if there is a scholarship that can support full time contribution to pandas ( in my opinion, if you have anything different in mind please share :))
+So let's participate in a survey which will help understand us better. The main aim of the survey is to get a better understanding of ourselves like: who we are?, where are we from?, what we are doing?, do we need a scholarship?, if yes, why etc
 
 
 Please add the questions that you feel can be included in the survey.
