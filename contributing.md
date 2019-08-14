@@ -83,7 +83,7 @@ Discovering an issue is great, here's what you need to do when you discover an i
 * Search if the issue has already been created.
 * If yes and open refer to existing issue.
 * If yes and closed reopen issue with descriptive comment.
-* If no, create the issue by;
+* If no, create the issue by:
    * Following our issue [template.](https://github.com/pandas-dev/pandas/blob/master/.github/ISSUE_TEMPLATE.md)
 ### Existing issue
 * Read comments.
