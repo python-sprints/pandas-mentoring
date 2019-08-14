@@ -155,7 +155,7 @@ Add all the questions that pops in your mind we will rank them later on.**
 - Usability
 
 ### 3.8. What python librar(y/ies) documentation do you always find helpful?
--(open question)
+- (open question)
 
 ## 4. Participation in the pandas mentoring program
 
