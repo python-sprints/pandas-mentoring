@@ -1,9 +1,10 @@
-<br>
+
+# Contributing
 
 ### Terms
   * Upstream: the repository from the ```original_author```
   * Origin: the forked repository under your ```account```
-<br>
+
 
 ### 1. Fork a ```project``` to your GitHub ```account```
 ### 2. Clone the ```project``` to your local environment
@@ -70,3 +71,24 @@
 ### Reference
 * [GitHub forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)  
 * [Git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
+
+
+## PR review rules
+ * Input from two reviewers is needed to merge a pull request. One reviewer approves the merge and the other reviewer merges the pull request.
+
+
+## Issue guidelines
+### New issue
+Discovering an issue is great, here's what you need to do when you discover an issue:
+* Search if the issue has already been created.
+* If yes and open refer to existing issue.
+* If yes and closed reopen issue with descriptive comment.
+* If no, create the issue by:
+   * Following our issue [template.](https://github.com/pandas-dev/pandas/blob/master/.github/ISSUE_TEMPLATE.md)
+### Existing issue
+* Read comments.
+* Find out if anyone is working on it, if no, offer to do it. If yes, see if you can be of help.
+### Reporting bugs
+* Give information about the version and the operating system you are running.
+* Show the steps to reproduce bug.
+* Add log.
