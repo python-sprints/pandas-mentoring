@@ -2,10 +2,9 @@
 # Contributing
 
 ### Terms
-<<<<<<< HEAD
+
   * Upstream: the repository from the `original_author`
   * Origin: the forked repository under your `account`
-<br>
 
 ### 1. Fork a `project` to your GitHub `account`
 ### 2. Clone the `project` to your local environment
