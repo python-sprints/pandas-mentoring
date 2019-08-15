@@ -28,15 +28,12 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 
 This list is not yet complete — we will keep adding more people.
 
-
 ## Lessons Learned:
 Please use the link below to review or capture key lessons learned as new contributors:
 
 [Lessons Learned/ Knowledge transfer documentation](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md)
 
 Gitter link: <https://gitter.im/py-sprints/pandas-mentoring>
-
-
 
 # Funding ideas
 
@@ -51,4 +48,3 @@ probably worth to keep a list somewhere:
 - [NumFOCUS small development grants](https://numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018): 3 times per year, max $5,000 per grant
 - pandas funding: very limited until now, just small donations through NumFOCUS that so far just covered travelling expenses of maintainers attending the anual sprint. The funding could increase, mainly because of Tidelift, the CZI grants, and a new website redesign with a more visible donations page.
 - pandas
-
