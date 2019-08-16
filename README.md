@@ -28,6 +28,11 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 
 This list is not yet complete — we will keep adding more people.
 
+## Lessons Learned:
+Please use the link below to review or capture key lessons learned as new contributors:
+
+[Lessons Learned/ Knowledge transfer documentation](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md)
+
 Gitter link: <https://gitter.im/py-sprints/pandas-mentoring>
 
 # Funding ideas
