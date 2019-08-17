@@ -48,4 +48,3 @@ probably worth to keep a list somewhere:
 - Corporate sponsors: companies hiring an intern directly to work in an open source project (not very common afaik)
 - [NumFOCUS small development grants](https://numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018): 3 times per year, max $5,000 per grant
 - pandas funding: very limited until now, just small donations through NumFOCUS that so far just covered travelling expenses of maintainers attending the anual sprint. The funding could increase, mainly because of Tidelift, the CZI grants, and a new website redesign with a more visible donations page.
-- pandas
