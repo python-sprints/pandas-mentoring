@@ -26,6 +26,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [montjoile](https://github.com/montjoile)
 - [Yoma](https://github.com/yomdroid)
 - [Tanya Jain](https://github.com/tanyaacjain)
+- [Raksha A](https://github.com/ComputerGeekNerd)
 
 This list is not yet complete — we will keep adding more people.
 
