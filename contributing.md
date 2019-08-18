@@ -95,3 +95,6 @@ Discovering an issue is great, here's what you need to do when you discover an i
 * Give information about the version and the operating system you are running.
 * Show the steps to reproduce bug.
 * Add log.
+
+
+*To read more tips on how to open issues, PRs and do code reviews, read the things we have been learning throughout the mentoring program [here](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md).
