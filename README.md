@@ -26,6 +26,7 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [montjoile](https://github.com/montjoile)
 - [Yoma](https://github.com/yomdroid)
 - [Tanya Jain](https://github.com/tanyaacjain)
+- [Eloisa Tran](https://github.com/EloisaElias)
 
 This list is not yet complete — we will keep adding more people.
 
