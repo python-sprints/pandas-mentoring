@@ -1,7 +1,4 @@
-# pandas-mentoring
-
 # Mentoring new pandas contributors (team 2019)
-
 <img src="img/logo.jpeg" width="600" height="200"><br>
 
 List of the [GitHub](https://github.com) usernames of all the people interested in contributing to [pandas](https://github.com/pandas-dev/pandas):
@@ -28,9 +25,10 @@ List of the [GitHub](https://github.com) usernames of all the people interested 
 - [Shilpa](https://github.com/shilpavijay)
 - [montjoile](https://github.com/montjoile)
 - [Yoma](https://github.com/yomdroid)
+- [Tanya Jain](https://github.com/tanyaacjain)
+- [Eloisa Tran](https://github.com/EloisaElias)
 
 This list is not yet complete — we will keep adding more people.
-
 
 ## Lessons Learned:
 Please use the link below to review or capture key lessons learned as new contributors:
@@ -38,8 +36,6 @@ Please use the link below to review or capture key lessons learned as new contri
 [Lessons Learned/ Knowledge transfer documentation](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md)
 
 Gitter link: <https://gitter.im/py-sprints/pandas-mentoring>
-
-
 
 # Funding ideas
 
@@ -53,5 +49,3 @@ probably worth to keep a list somewhere:
 - Corporate sponsors: companies hiring an intern directly to work in an open source project (not very common afaik)
 - [NumFOCUS small development grants](https://numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018): 3 times per year, max $5,000 per grant
 - pandas funding: very limited until now, just small donations through NumFOCUS that so far just covered travelling expenses of maintainers attending the anual sprint. The funding could increase, mainly because of Tidelift, the CZI grants, and a new website redesign with a more visible donations page.
-- pandas
-
