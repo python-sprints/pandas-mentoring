@@ -124,5 +124,4 @@ Discovering an issue is great, here's what you need to do when you discover an i
 * [GitHub forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)  
 * [Git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
 * [Pandas contributing guides](https://pandas.pydata.org/pandas-docs/stable/development/contributing.html)
-
-*To read more tips on how to open issues, PRs and do code reviews, read the things we have been learning throughout the mentoring program [here](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md).
+* To read more tips on how to open issues, PRs and do code reviews, read the things we have been learning throughout the mentoring program [here](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md).
