@@ -1,10 +1,12 @@
 
 # Contributing
 
+## Index
 1. [How to contribute? Step by step guide](#how-to-contribute?-step-by-step-guide)
-2. [PR conventions](pr-conventions)
-3. [PR review rules](pr-review-rules)
-4. [Issue guidelines](issue-guidelines)
+2. [PR conventions](#pr-conventions)
+3. [PR review rules](#pr-review-rules)
+4. [Issue guidelines](#issue-guidelines)
+5. [References](#references)
 
 ## How to contribute? Step by step guide
 
@@ -80,10 +82,6 @@
  * Deleting your local branch from the command line: `git branch -d new-branch`
  * Additionally if you want to delete your remote branch: `git push origin : new-branch`
 
-#### Reference
-* [GitHub forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)  
-* [Git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
-
 ## PR conventions
 When submitting a PR, please add one of the following prefixes depending on the topic you are addressing:
 
@@ -122,5 +120,9 @@ Discovering an issue is great, here's what you need to do when you discover an i
 * Show the steps to reproduce bug.
 * Add log.
 
+## References
+* [GitHub forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)  
+* [Git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
+* [Pandas contributing guides](https://pandas.pydata.org/pandas-docs/stable/development/contributing.html)
 
 *To read more tips on how to open issues, PRs and do code reviews, read the things we have been learning throughout the mentoring program [here](https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md).
