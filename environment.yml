@@ -4,3 +4,10 @@ channels:
   - conda-forge
 dependencies:
   - sphinx
+  - ipywidgets
+  - ipykernel
+  - voila
+  - seaborn
+  - qgrid
+  - pandas
+  - matplotlib
