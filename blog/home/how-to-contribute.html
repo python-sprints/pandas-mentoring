@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <base href="https://python-sprints.github.io/pandas-mentoring">
+
+    <!--
+    favicons generated with:
+    <http://realfavicongenerator.net>
+
+    if you want to generate your own favicon, use this custom path:
+    /theme/ico/favicon/
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/theme/ico/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/theme/ico/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/ico/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/theme/ico/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/ico/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/theme/ico/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/theme/ico/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/theme/ico/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/theme/ico/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/theme/ico/favicon/manifest.json">
+    <link rel="mask-icon" href="/theme/ico/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/theme/ico/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/theme/ico/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/theme/ico/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="/theme/js/lib/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme/css/uikit.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.min.css" />
+    <!-- default pygment style is the 'default' style -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.min.css" />
+    <script src="/theme/js/uikit.min.js"></script>
+    <title>How to contribute? | Blog</title>
+   <meta name="tags" content="contributing" />  <meta name="description" content="Index How to contribute? Step by step guide PR conventions PR review rules Issue guidelines References How to contribute? Step by step guide Terms..." />  <meta name="category" content="Contributing" /> 
+  </head>
+  <body>
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="">Blog</a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+      <li class="uk-active"><a href="/category/contributing.html">Contributing</a></li>
+      <li><a href="/category/tools.html">Tools</a></li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Blog</div>
+    </nav>
+    <div class="uk-grid" data-uk-grid-margin="">
+        <main class="uk-width-medium-3-4">
+<article>
+<div class="uk-article">
+    <header>
+    <h1 class=" uk-article-title">
+        <a href="/how-to-contribute.html">How to contribute?</a>
+    </h1>
+    <p class="uk-article-meta">
+    Published on   <time datetime="2019-09-08">Sun 08 September 2019</time>
+        by         <a class="url fn" href="/author/les-pandanistas.html">Les Pandanistas</a>
+    posted in <a href="/category/contributing.html">Contributing</a>
+    <br/>
+    <a href="/tag/contributing.html" class="uk-icon-tag">contributing</a>
+
+    </p>
+    </header>
+    <h2>Index</h2>
+<ol>
+<li><a href="#how-to-contribute?-step-by-step-guide">How to contribute? Step by step guide</a></li>
+<li><a href="#pr-conventions">PR conventions</a></li>
+<li><a href="#pr-review-rules">PR review rules</a></li>
+<li><a href="#issue-guidelines">Issue guidelines</a></li>
+<li><a href="#references">References</a></li>
+</ol>
+<h2>How to contribute? Step by step guide</h2>
+<h4>Terms</h4>
+<ul>
+<li>Upstream: the repository from the <code>original_author</code></li>
+<li>Origin: the forked repository under your <code>account</code></li>
+</ul>
+<h4>1. Fork a <code>project</code> to your GitHub <code>account</code></h4>
+<h4>2. Clone the <code>project</code> to your local environment</h4>
+<div class="highlight"><pre><span></span><span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">account</span><span class="o">/</span><span class="n">project</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
+<span class="w">    </span><span class="n">cd</span><span class="w"> </span><span class="n">project</span><span class="w"></span>
+</pre></div>
+
+
+<h4>3. Set up the origin and upstream of the your local <code>project</code></h4>
+<div class="highlight"><pre><span></span><span class="w">   </span><span class="err">#</span><span class="w">  </span><span class="k">Add</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="ss">&quot;upstream&quot;</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">cloned</span><span class="w"> </span><span class="n">repository</span><span class="w"></span>
+<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">upstream</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">original_author</span><span class="o">/</span><span class="n">project</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
+
+<span class="w">   </span><span class="err">#</span><span class="w"> </span><span class="k">Add</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="ss">&quot;origin&quot;</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">cloned</span><span class="w"> </span><span class="n">repository</span><span class="w"></span>
+<span class="w">    </span><span class="n">git</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">account</span><span class="o">/</span><span class="n">project</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
+</pre></div>
+
+
+<h4>4. Synchronize with updates from the upstream</h4>
+<div class="highlight"><pre><span></span>   <span class="c1"># 1) Go to the &quot;master&quot; branch of your fork (&quot;origin&quot;)</span>
+    <span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+
+   <span class="c1"># 2) Fetch the commits from the &quot;upstream&quot;</span>
+    <span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+
+   <span class="c1"># 3) If you have local changes, stash the changes of your &quot;master&quot; branch</span>
+    <span class="n">git</span> <span class="n">stash</span>
+
+   <span class="c1"># 4) Merge the changes from the &quot;master&quot; branch of the &quot;upstream&quot; into your the &quot;master&quot; branch of your &quot;origin&quot;</span>
+    <span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">master</span>
+
+   <span class="c1"># 5) Resolve merge conflicts if any and commit your merge</span>
+    <span class="n">git</span> <span class="n">commit</span> -<span class="sr">m &quot;Merged from upstream&quot;</span>
+
+   <span class="c1"># 6) Push the changes to your fork (&quot;origin&quot;)</span>
+    <span class="n">git</span> <span class="nb">push</span>
+
+   <span class="c1"># 7) Get back your stashed changes (if any)</span>
+    <span class="n">git</span> <span class="n">stash</span> <span class="nb">pop</span>
+</pre></div>
+
+
+<h4>5. Do your work in a <code>new-branch</code> of your origin</h4>
+<div class="highlight"><pre><span></span>   <span class="c1"># 1) Add a new branch from your origin/master branch</span>
+   <span class="n">git</span> <span class="n">branch</span> <span class="n">new-branch</span> <span class="n">origin</span><span class="o">/</span><span class="n">master</span>
+   <span class="n">git</span> <span class="n">checkout</span> <span class="n">new-branch</span>
+
+   <span class="c1"># 2) Make a commit of your work (e.g. you added your name in the README.md)</span>
+   <span class="n">git</span> <span class="n">add</span> <span class="n">README</span>.<span class="n">md</span>
+   <span class="n">git</span> <span class="n">commit</span> -<span class="sr">m &#39;add my name&#39;</span>
+
+   <span class="c1"># 3) If you had multiple commits, but you want to select a specific commit(e.g. commit id: bbb909f) for a pull request</span>
+   <span class="n">git</span> <span class="n">cherry-pick</span> <span class="n">bbb909f</span>
+
+   <span class="c1"># 4) Push to your new-branch</span>
+   <span class="n">git</span> <span class="nb">push</span> <span class="n">origin</span> <span class="n">new-branch</span>
+</pre></div>
+
+
+<h4>6. Send a pull request on GitHub</h4>
+<ul>
+<li>Go to the <code>new-branch</code> of your forked <code>project</code></li>
+<li>Click <code>Compare &amp; pull request</code></li>
+<li>Leave a comment</li>
+<li>If you are solving an issue (e.g. <code>#17</code>), add <code>Closes #17</code> in the comment, the issue will automatically be closed when the pull request is merged.</li>
+</ul>
+<h4>7. Delete branch locally and/or remotely after pull request is merged on GitHub</h4>
+<ul>
+<li>Deleting your local branch from the command line: <code>git branch -d new-branch</code></li>
+<li>Additionally if you want to delete your remote branch: <code>git push origin : new-branch</code></li>
+</ul>
+<h2>PR conventions</h2>
+<p>When submitting a PR, please add one of the following prefixes depending on the topic you are addressing:</p>
+<div class="highlight"><pre><span></span><span class="o">[</span><span class="n">ENH</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Enhancement</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">functionality</span><span class="w"></span>
+<span class="o">[</span><span class="n">BUG</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Bug</span><span class="w"> </span><span class="n">fix</span><span class="w"></span>
+<span class="o">[</span><span class="n">DOC</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Additions</span><span class="o">/</span><span class="n">updates</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">documentation</span><span class="w"></span>
+<span class="o">[</span><span class="n">TST</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Additions</span><span class="o">/</span><span class="n">updates</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">tests</span><span class="w"></span>
+<span class="o">[</span><span class="n">BLD</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Updates</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="n">process</span><span class="o">/</span><span class="n">scripts</span><span class="w"></span>
+<span class="o">[</span><span class="n">PERF</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Performance</span><span class="w"> </span><span class="n">improvement</span><span class="w"></span>
+<span class="o">[</span><span class="n">CLN</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="n">Code</span><span class="w"> </span><span class="n">cleanup</span><span class="w"></span>
+</pre></div>
+
+
+<p>In addition:
+- Please reference the relevant GitHub issues in your commit message using GH1234 or #1234.
+- Include a subject line with &lt; 80 chars.
+- Optionally, include a commit message body, leaving one blank line with the subject line.</p>
+<h2>PR review rules</h2>
+<ul>
+<li>Input from two reviewers is needed to merge a pull request. One reviewer approves the merge and the other reviewer merges the pull request.</li>
+</ul>
+<h2>Issue guidelines</h2>
+<h3>New issue</h3>
+<p>Discovering an issue is great, here's what you need to do when you discover an issue:
+* Search if the issue has already been created.
+* If yes and open refer to existing issue.
+* If yes and closed reopen issue with descriptive comment.
+* If no, create the issue by:
+   * Following our issue <a href="https://github.com/pandas-dev/pandas/blob/master/.github/ISSUE_TEMPLATE.md">template.</a></p>
+<h3>Existing issue</h3>
+<ul>
+<li>Read comments.</li>
+<li>Find out if anyone is working on it, if no, offer to do it. If yes, see if you can be of help.</li>
+</ul>
+<h3>Reporting bugs</h3>
+<ul>
+<li>Give information about the version and the operating system you are running.</li>
+<li>Show the steps to reproduce bug.</li>
+<li>Add log.</li>
+</ul>
+<h2>References</h2>
+<ul>
+<li><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">GitHub forking</a>  </li>
+<li><a href="https://git-scm.com/docs/git-cherry-pick">Git cherry-pick</a></li>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/development/contributing.html">Pandas contributing guides</a></li>
+<li>To read more tips on how to open issues, PRs and do code reviews, read the things we have been learning throughout the mentoring program <a href="https://github.com/python-sprints/pandas-mentoring/blob/master/LEARNING_POINTS.md">here</a>.</li>
+</ul>
+</div>
+</article>
+        </main>
+        <aside class="uk-width-medium-1-4">
+
+  <div class="uk-panel uk-panel-box uk-text-center">
+    <a href="/author/Les Pandanistas.html">
+      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/logo.jpeg"//><h3>Les Pandanistas</h3></a>
+  </div>
+
+  <div class="uk-panel">
+      <h3 class="uk-panel-title">Social Links</h3>
+      <div class="icons">
+          <a href="https://github.com/python-sprints/pandas-mentoring" class="uk-icon-button uk-icon-justify uk-icon-github"></a>
+      </div>
+  </div>
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Tags</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="/tag/pelican.html" class="uk-icon-tag">Pelican</a></li>
+          <li><a href="/tag/contributing.html" class="uk-icon-tag">contributing</a></li>
+    </ul>
+    </div>
+
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Links</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="https://pandas-docs.github.io/pandas-docs-travis/" class="uk-icon-external-link">Pandas</a></li>
+          <li><a href="https://python-sprints.github.io/" class="uk-icon-external-link">Python Sprints</a></li>
+    </ul>
+    </div>
+
+        </aside>
+    </div>
+    <footer class="uk-margin-bottom uk-panel uk-panel-box uk-text-center uk-margin-large-top">
+        Generated by <a href="https://github.com/getpelican/pelican" class="uk-icon-external-link">pelican</a>
+        and styled with <a href="http://getuikit.com" class="uk-icon-external-link">uikit</a>
+        and themed by <a href="http://inktrap.org" class="uk-icon-external-link">inktrap</a>
+        and made with <a class="uk-icon-heart"></a>
+        <br/>
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://python-sprints.github.io/pandas-mentoring/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
+
+    </footer>
+</div>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+      <li class="uk-active"><a href="/category/contributing.html">Contributing</a></li>
+      <li><a href="/category/tools.html">Tools</a></li>
+        </ul>
+    </div>
+</div>
+  </body>
+</html>

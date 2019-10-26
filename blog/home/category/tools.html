@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <base href="https://python-sprints.github.io/pandas-mentoring">
+
+    <!--
+    favicons generated with:
+    <http://realfavicongenerator.net>
+
+    if you want to generate your own favicon, use this custom path:
+    /theme/ico/favicon/
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/theme/ico/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/theme/ico/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/ico/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/theme/ico/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/ico/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/theme/ico/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/theme/ico/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/theme/ico/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/theme/ico/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/theme/ico/favicon/manifest.json">
+    <link rel="mask-icon" href="/theme/ico/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/theme/ico/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/theme/ico/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/theme/ico/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="/theme/js/lib/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme/css/uikit.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.min.css" />
+    <!-- default pygment style is the 'default' style -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.min.css" />
+    <script src="/theme/js/uikit.min.js"></script>
+    <title>Tools | Blog</title>
+
+ 
+  </head>
+  <body>
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="">Blog</a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+      <li><a href="/category/contributing.html">Contributing</a></li>
+      <li class="uk-active"><a href="/category/tools.html">Tools</a></li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Blog</div>
+    </nav>
+    <div class="uk-grid" data-uk-grid-margin="">
+        <main class="uk-width-medium-3-4">
+<!--
+<h1 class="heading uk-text-primary">
+    Articles in the category <span class="entity">Tools</span>
+</h1>
+-->
+        <h1 class=" uk-article-title">
+            <a href="/build-a-blog-using-pelican.html">Build a blog using Pelican</a>
+        </h1>
+        <p class="uk-article-meta">
+        Published on   <time datetime="2019-09-08">Sun 08 September 2019</time>
+        by         <a class="url fn" href="/author/les-pandanistas.html">Les Pandanistas</a>
+    posted in <a href="/category/tools.html">Tools</a>
+    <br/>
+    <a href="/tag/pelican.html" class="uk-icon-tag">Pelican</a>
+
+        </p>
+        <h2>What is Pelican?</h2>
+<p>Pelican is a Python library that lets you generate static websites from templates.</p>
+<h2>1. Make a directory to host your site files</h2>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">pandas</span><span class="o">-</span><span class="n">mentoring</span>
+<span class="n">mkdir</span> <span class="n">blog</span>
+<span class="n">cd</span> <span class="n">blog</span>
+</pre></div>
+
+
+<h2>2. Generate the initial boilerplate</h2>
+<div class="highlight"><pre><span></span><span class="nv">pelican</span><span class="o">-</span><span class="nv">quickstart</span>
+
+<span class="o">&gt;</span> <span class="nv">Where</span> <span class="k">do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">create</span> <span class="nv">your</span> <span class="nv">new</span> <span class="nv">web</span> <span class="nv">site</span>? [.]
+<span class="o">&gt;</span> <span class="nv">What …</span></pre></div>
+        <p>
+        <a class="uk-button uk-button-primary" href="https://python-sprints.github.io/pandas-mentoring/build-a-blog-using-pelican.html">Continue Reading</a>
+        <!--
+        <a class="uk-button" href="">Comments</a>
+        -->
+        </p>
+        </main>
+        <aside class="uk-width-medium-1-4">
+
+  <div class="uk-panel uk-panel-box uk-text-center">
+    <a href="/author/Les Pandanistas.html">
+      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/logo.jpeg"//><h3>Les Pandanistas</h3></a>
+  </div>
+
+  <div class="uk-panel">
+      <h3 class="uk-panel-title">Social Links</h3>
+      <div class="icons">
+          <a href="https://github.com/python-sprints/pandas-mentoring" class="uk-icon-button uk-icon-justify uk-icon-github"></a>
+      </div>
+  </div>
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Tags</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="/tag/pelican.html" class="uk-icon-tag">Pelican</a></li>
+          <li><a href="/tag/contributing.html" class="uk-icon-tag">contributing</a></li>
+    </ul>
+    </div>
+
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Links</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="https://pandas-docs.github.io/pandas-docs-travis/" class="uk-icon-external-link">Pandas</a></li>
+          <li><a href="https://python-sprints.github.io/" class="uk-icon-external-link">Python Sprints</a></li>
+    </ul>
+    </div>
+
+        </aside>
+    </div>
+    <footer class="uk-margin-bottom uk-panel uk-panel-box uk-text-center uk-margin-large-top">
+        Generated by <a href="https://github.com/getpelican/pelican" class="uk-icon-external-link">pelican</a>
+        and styled with <a href="http://getuikit.com" class="uk-icon-external-link">uikit</a>
+        and themed by <a href="http://inktrap.org" class="uk-icon-external-link">inktrap</a>
+        and made with <a class="uk-icon-heart"></a>
+        <br/>
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://python-sprints.github.io/pandas-mentoring/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
+
+            <br/>
+            <a class="uk-icon-rss-square"></a><a href="/category/tools.xml">Feed</a> for this page
+    </footer>
+</div>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+      <li><a href="/category/contributing.html">Contributing</a></li>
+      <li class="uk-active"><a href="/category/tools.html">Tools</a></li>
+        </ul>
+    </div>
+</div>
+  </body>
+</html>

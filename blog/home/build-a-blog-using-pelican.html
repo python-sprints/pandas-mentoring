@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <base href="https://python-sprints.github.io/pandas-mentoring">
+
+    <!--
+    favicons generated with:
+    <http://realfavicongenerator.net>
+
+    if you want to generate your own favicon, use this custom path:
+    /theme/ico/favicon/
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/theme/ico/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/theme/ico/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/ico/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/theme/ico/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/ico/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/theme/ico/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/theme/ico/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/theme/ico/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/theme/ico/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/theme/ico/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/theme/ico/favicon/manifest.json">
+    <link rel="mask-icon" href="/theme/ico/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/theme/ico/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/theme/ico/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/theme/ico/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="/theme/js/lib/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme/css/uikit.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/custom.min.css" />
+    <!-- default pygment style is the 'default' style -->
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.min.css" />
+    <script src="/theme/js/uikit.min.js"></script>
+    <title>Build a blog using pelican | Blog</title>
+   <meta name="tags" content="Pelican" />  <meta name="description" content="What is Pelican? Pelican is a Python library that lets you generate static websites from templates. 1. Make a directory to host your site files cd..." />  <meta name="category" content="Tools" /> 
+  </head>
+  <body>
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="">Blog</a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+      <li><a href="/category/contributing.html">Contributing</a></li>
+      <li class="uk-active"><a href="/category/tools.html">Tools</a></li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Blog</div>
+    </nav>
+    <div class="uk-grid" data-uk-grid-margin="">
+        <main class="uk-width-medium-3-4">
+<article>
+<div class="uk-article">
+    <header>
+    <h1 class=" uk-article-title">
+        <a href="/build-a-blog-using-pelican.html">Build a blog using Pelican</a>
+    </h1>
+    <p class="uk-article-meta">
+    Published on   <time datetime="2019-09-08">Sun 08 September 2019</time>
+        by         <a class="url fn" href="/author/les-pandanistas.html">Les Pandanistas</a>
+    posted in <a href="/category/tools.html">Tools</a>
+    <br/>
+    <a href="/tag/pelican.html" class="uk-icon-tag">Pelican</a>
+
+    </p>
+    </header>
+    <h2>What is Pelican?</h2>
+<p>Pelican is a Python library that lets you generate static websites from templates.</p>
+<h2>1. Make a directory to host your site files</h2>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">pandas</span><span class="o">-</span><span class="n">mentoring</span>
+<span class="n">mkdir</span> <span class="n">blog</span>
+<span class="n">cd</span> <span class="n">blog</span>
+</pre></div>
+
+
+<h2>2. Generate the initial boilerplate</h2>
+<div class="highlight"><pre><span></span><span class="nv">pelican</span><span class="o">-</span><span class="nv">quickstart</span>
+
+<span class="o">&gt;</span> <span class="nv">Where</span> <span class="k">do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">create</span> <span class="nv">your</span> <span class="nv">new</span> <span class="nv">web</span> <span class="nv">site</span>? [.]
+<span class="o">&gt;</span> <span class="nv">What</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">the</span> <span class="nv">title</span> <span class="nv">of</span> <span class="nv">this</span> <span class="nv">web</span> <span class="nv">site</span>? <span class="nv">Pandas</span> <span class="nv">Mentoring</span> <span class="nv">Blog</span>
+<span class="o">&gt;</span> <span class="nv">Who</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">the</span> <span class="nv">author</span> <span class="nv">of</span> <span class="nv">this</span> <span class="nv">web</span> <span class="nv">site</span>? <span class="nv">Les</span> <span class="nv">Pandanistas</span>
+<span class="o">&gt;</span> <span class="nv">What</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">the</span> <span class="nv">default</span> <span class="nv">language</span> <span class="nv">of</span> <span class="nv">this</span> <span class="nv">web</span> <span class="nv">site</span>? [<span class="nv">en</span>]
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">specify</span> <span class="nv">a</span> <span class="nv">URL</span> <span class="nv">prefix</span>? <span class="nv">e</span>.<span class="nv">g</span>., <span class="nv">https</span>:<span class="o">//</span><span class="nv">example</span>.<span class="nv">com</span>   <span class="ss">(</span><span class="nv">Y</span><span class="o">/</span><span class="nv">n</span><span class="ss">)</span> <span class="nv">Y</span>
+<span class="o">&gt;</span> <span class="nv">What</span> <span class="nv">is</span> <span class="nv">your</span> <span class="nv">URL</span> <span class="nv">prefix</span>? <span class="ss">(</span><span class="nv">see</span> <span class="nv">above</span> <span class="nv">example</span><span class="c1">; no trailing slash) https://python-sprints.github.io/pandas-mentoring</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">enable</span> <span class="nv">article</span> <span class="nv">pagination</span>? <span class="ss">(</span><span class="nv">Y</span><span class="o">/</span><span class="nv">n</span><span class="ss">)</span> <span class="nv">Y</span>
+<span class="o">&gt;</span> <span class="nv">How</span> <span class="nv">many</span> <span class="nv">articles</span> <span class="nv">per</span> <span class="nv">page</span> <span class="k">do</span> <span class="nv">you</span> <span class="nv">want</span>? [<span class="mi">10</span>]
+<span class="o">&gt;</span> <span class="nv">What</span> <span class="nv">is</span> <span class="nv">your</span> <span class="nv">time</span> <span class="nv">zone</span>? [<span class="nv">Europe</span><span class="o">/</span><span class="nv">Paris</span>]
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">generate</span> <span class="nv">a</span> <span class="nv">tasks</span>.<span class="nv">py</span><span class="o">/</span><span class="nv">Makefile</span> <span class="nv">to</span> <span class="nv">automate</span> <span class="nv">generation</span> <span class="nv">and</span> <span class="nv">publishing</span>? <span class="ss">(</span><span class="nv">Y</span><span class="o">/</span><span class="nv">n</span><span class="ss">)</span> <span class="nv">Y</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">upload</span> <span class="nv">your</span> <span class="nv">website</span> <span class="nv">using</span> <span class="nv">FTP</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">N</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">upload</span> <span class="nv">your</span> <span class="nv">website</span> <span class="nv">using</span> <span class="nv">SSH</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">N</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">upload</span> <span class="nv">your</span> <span class="nv">website</span> <span class="nv">using</span> <span class="nv">Dropbox</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">N</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">upload</span> <span class="nv">your</span> <span class="nv">website</span> <span class="nv">using</span> <span class="nv">S3</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">N</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">upload</span> <span class="nv">your</span> <span class="nv">website</span> <span class="nv">using</span> <span class="nv">Rackspace</span> <span class="nv">Cloud</span> <span class="nv">Files</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">N</span>
+<span class="o">&gt;</span> <span class="k">Do</span> <span class="nv">you</span> <span class="nv">want</span> <span class="nv">to</span> <span class="nv">upload</span> <span class="nv">your</span> <span class="nv">website</span> <span class="nv">using</span> <span class="nv">GitHub</span> <span class="nv">Pages</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">y</span>
+<span class="o">&gt;</span> <span class="nv">Is</span> <span class="nv">this</span> <span class="nv">your</span> <span class="nv">personal</span> <span class="nv">page</span> <span class="ss">(</span><span class="nv">username</span>.<span class="nv">github</span>.<span class="nv">io</span><span class="ss">)</span>? <span class="ss">(</span><span class="nv">y</span><span class="o">/</span><span class="nv">N</span><span class="ss">)</span> <span class="nv">N</span>
+<span class="nv">Done</span>. <span class="nv">Your</span> <span class="nv">new</span> <span class="nv">project</span> <span class="nv">is</span> <span class="nv">available</span> <span class="nv">at</span> <span class="nv">localpath</span><span class="o">/</span><span class="nv">pandas</span><span class="o">-</span><span class="nv">mentoring</span><span class="o">/</span><span class="nv">blog</span>
+</pre></div>
+
+
+<h2>3. Add content in a markdown file</h2>
+<div class="highlight"><pre><span></span><span class="n">vim</span> <span class="n">content</span><span class="o">/</span><span class="n">build</span><span class="o">-</span><span class="n">blog</span><span class="p">.</span><span class="n">md</span>
+</pre></div>
+
+
+<h2>4. Generate and preview your site</h2>
+<div class="highlight"><pre><span></span><span class="n">pelican</span> <span class="n">content</span>
+<span class="n">pelican</span> <span class="c1">--listen</span>
+<span class="o">#</span> <span class="n">Navigate</span> <span class="k">to</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8000</span><span class="o">/</span> <span class="k">in</span> <span class="n">your</span> <span class="n">browser</span><span class="p">.</span>
+</pre></div>
+
+
+<h2>5. Add a theme</h2>
+<div class="highlight"><pre><span></span><span class="c1"># Choose a path for to clone pelican-themes directory (e.g. blog/)</span>
+<span class="n">git</span> <span class="nb">clone</span> --<span class="n">recursive</span> <span class="n">https:</span>//<span class="n">github</span>.<span class="n">com</span><span class="o">/</span><span class="n">getpelican</span><span class="o">/</span><span class="n">pelican-themes</span> ../<span class="n">pelican-themes</span>
+
+<span class="c1"># Add a theme in the pelicanconf.py of your site (e.g. fishingbird/pelicanconf.py)</span>
+<span class="n">THEME</span> = <span class="s">&#39;../pelican-themes/uikit&#39;</span>
+</pre></div>
+
+
+<h2>7. Publish to your Github project page</h2>
+<div class="highlight"><pre><span></span><span class="o">#</span> <span class="k">Open</span> <span class="n">pelicanconf</span><span class="p">.</span><span class="n">py</span>
+<span class="n">vim</span> <span class="n">pelicanconf</span><span class="p">.</span><span class="n">py</span>
+
+<span class="o">#</span> <span class="k">Add</span> <span class="n">your</span> <span class="n">SITE_URL</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;https://python-sprints.github.io/pandas-mentoring&#39;</span>
+
+<span class="o">#</span> <span class="n">Save</span> <span class="n">your</span> <span class="n">file</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c1"># Generate output</span>
+<span class="n">pelican</span> <span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># Publish to GitHub using ghp-import</span>
+<span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">n</span>
+
+<span class="c1"># Push to gh-pages branch</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+
+
+<h2>8. What are the files?</h2>
+<ul>
+<li>Makefile - This file defines make commands that perform the most important tasks like generating your site and starting a local http server.</li>
+<li>pelicanconf.py - This file contains settings to customize your site.</li>
+<li>publishconf.py - This file contains settings that are only used when you’re ready to publish to the web.</li>
+<li>content/ - This folder is where you’ll put the templates and files that will be translated into the content of your site.</li>
+<li>output/ - This folder might not exist until you convert your content into html. By default, the translated website lands here.</li>
+</ul>
+<h2>9. Reference</h2>
+<ul>
+<li><a href="https://github.com/getpelican/pelican/wiki/Tutorials">Tutorials</a></li>
+<li><a href="https://docs.getpelican.com/en/stable/">Documentation</a></li>
+</ul>
+</div>
+</article>
+        </main>
+        <aside class="uk-width-medium-1-4">
+
+  <div class="uk-panel uk-panel-box uk-text-center">
+    <a href="/author/Les Pandanistas.html">
+      <img alt="A picture of the author of this content." class="uk-border-circle" src="/theme/img/logo.jpeg"//><h3>Les Pandanistas</h3></a>
+  </div>
+
+  <div class="uk-panel">
+      <h3 class="uk-panel-title">Social Links</h3>
+      <div class="icons">
+          <a href="https://github.com/python-sprints/pandas-mentoring" class="uk-icon-button uk-icon-justify uk-icon-github"></a>
+      </div>
+  </div>
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Tags</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="/tag/pelican.html" class="uk-icon-tag">Pelican</a></li>
+          <li><a href="/tag/contributing.html" class="uk-icon-tag">contributing</a></li>
+    </ul>
+    </div>
+
+
+    <div class="uk-panel">
+    <h3 class="uk-panel-title">Links</h3>
+    <ul class="uk-list uk-list-line">
+          <li><a href="https://pandas-docs.github.io/pandas-docs-travis/" class="uk-icon-external-link">Pandas</a></li>
+          <li><a href="https://python-sprints.github.io/" class="uk-icon-external-link">Python Sprints</a></li>
+    </ul>
+    </div>
+
+        </aside>
+    </div>
+    <footer class="uk-margin-bottom uk-panel uk-panel-box uk-text-center uk-margin-large-top">
+        Generated by <a href="https://github.com/getpelican/pelican" class="uk-icon-external-link">pelican</a>
+        and styled with <a href="http://getuikit.com" class="uk-icon-external-link">uikit</a>
+        and themed by <a href="http://inktrap.org" class="uk-icon-external-link">inktrap</a>
+        and made with <a class="uk-icon-heart"></a>
+        <br/>
+        <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://python-sprints.github.io/pandas-mentoring/theme/ico/cc/by-sa/4.0/80x15.png" /></a>This work is licensed under a <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>
+
+    </footer>
+</div>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+      <li><a href="/category/contributing.html">Contributing</a></li>
+      <li class="uk-active"><a href="/category/tools.html">Tools</a></li>
+        </ul>
+    </div>
+</div>
+  </body>
+</html>
