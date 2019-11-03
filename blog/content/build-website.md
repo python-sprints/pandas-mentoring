@@ -51,7 +51,7 @@ pelican --listen
 
 ## 5. Add a theme
 ```
-# Choose a path for to clone pelican-themes directory (e.g. blog/)
+# Choose a path to clone pelican-themes directory (e.g. blog/)
 git clone --recursive https://github.com/getpelican/pelican-themes ../pelican-themes
 
 # Add a theme in the pelicanconf.py of your site (e.g. fishingbird/pelicanconf.py)
@@ -70,10 +70,10 @@ SITEURL = 'https://python-sprints.github.io/pandas-mentoring'
 ```
 ```
 # Generate output
-pelican content -o output -s pelicanconf.py
+pelican content -o home -s pelicanconf.py
 
 # Publish to GitHub using ghp-import
-ghp-import output -n
+ghp-import home -n
 
 # Push to gh-pages branch
 git push origin gh-pages
@@ -84,7 +84,7 @@ git push origin gh-pages
   * pelicanconf.py - This file contains settings to customize your site.
   * publishconf.py - This file contains settings that are only used when you’re ready to publish to the web.
   * content/ - This folder is where you’ll put the templates and files that will be translated into the content of your site.
-  * output/ - This folder might not exist until you convert your content into html. By default, the translated website lands here.
+  * home/ - This folder might not exist until you convert your content into html. By default, the translated website lands here.
 
 
 ## 9. Reference

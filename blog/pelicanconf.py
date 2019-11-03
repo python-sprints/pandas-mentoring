@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Les Pandanistas'
 SITENAME = 'Blog'
-SITEURL = 'https://python-sprints.github.io/pandas-mentoring'
+#SITEURL = 'https://python-sprints.github.io/pandas-mentoring'
 PATH = 'content'
 OUTPUT_PATH = 'home'
 TIMEZONE = 'Europe/Paris'
@@ -35,9 +35,9 @@ THEME = '../pelican-themes/uikit'
 DISPLAY_TAGS_ON_SIDEBAR_LIMIT = 0
 DISPLAY_LINKS_ON_SIDEBAR_LIMIT = 0
 LICENSE = {
-    'cc_name':"by-sa",
-    'hosted':False,
-    'compact':True,
-    'brief':False
+    'cc_name': "by-sa",
+    'hosted': False,
+    'compact': True,
+    'brief': False
     }
-AUTHOR_IMAGE = u'logo.jpeg'
+AUTHOR_IMAGE = '../img/logo.jpeg'
